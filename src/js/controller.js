@@ -128,10 +128,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const testFun = function () {
-  console.log(`This is a test`);
-};
-
 //subscriber : init
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -141,7 +137,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  testFun();
 };
 
 init();
